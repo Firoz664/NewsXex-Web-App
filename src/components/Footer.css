@@ -1,0 +1,15 @@
+
+.footerBorder {
+    background-color:  rgb(68, 52, 52);
+    display: grid;
+    color: white;
+}
+
+.footerBorder>div {
+    border-top: 1px solid rgba(197, 197, 197, 0.185);
+    color: aliceblue;
+    width: 90vmax;
+    margin: auto;
+    padding: 2vmax;
+    font-size: 0.98vmax;
+}
