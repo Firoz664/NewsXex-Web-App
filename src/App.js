@@ -6,10 +6,9 @@ import NabBar from './components/NabBar'
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import About from './components/About';
-import PreNavbar from './components/PreNavbar';
+
 import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Form from './components/Form';
+
 import LoadingBar from 'react-top-loading-bar'
 
 
@@ -35,7 +34,7 @@ export default class App extends Component {
         
       />
         <NabBar />
-        <PreNavbar/>
+        
         
         <Switch>
         <Route exact path="/"><News  setProgress={this.setProgress} key="general" pageSize={this.pageSize} apiKey={this.apiKey} country="in" category="general"/></Route>
@@ -48,11 +47,7 @@ export default class App extends Component {
           <Route exact path="/science"><News  setProgress={this.setProgress} key="science"pageSize={this.pageSize} apiKey={this.apiKey} country="in" category="science"/></Route> 
           <Route exact path="/sports"><News  setProgress={this.setProgress} key="sports"pageSize={this.pageSize} apiKey={this.apiKey} country="in" category="sports"/></Route> 
           <Route exact path="/technology"><News  setProgress={this.setProgress} key="technology"pageSize={this.pageSize} apiKey={this.apiKey} country="in" category="technology"/></Route> 
-          <div className="container my-5">
-          <Route exact path="/contact"><Contact setProgress={this.setProgress} key="contact" /></Route> 
-          <Route exact path="/signup"><Form setProgress={this.setProgress} key="signup" /></Route> 
-
-          </div>
+        
           
           </Switch>
           <Footer/>

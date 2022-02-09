@@ -8,7 +8,7 @@ const Footer = () => {
        <>
         <div className="footerBorder my-3">
    
-       <div> Copyright © 2021 TheExpesssNews.| All Rights Reserved | Design by Md Shams Firoz|Moblile: +91-8010706464</div>  
+       <div> Copyright © 2021 TheExpesssNews.| All Rights Reserved | Design by Prince Yadav|Moblile: +91-9910190463</div>  
   
         </div>
        </>
